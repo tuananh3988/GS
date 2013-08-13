@@ -1,0 +1,85 @@
+body {
+  font-family: Quicksand, Quattrocento Sans, Georgia;
+}
+.socialIcons {
+  line-height: 16px;
+  
+  margin-bottom: 0;
+}
+.socialIcons a {
+  float: right;
+  width: 16px;
+  height: 16px;
+  text-indent: -1000em;
+  display: inline-block;
+  margin-left: 3px;
+  -webkit-transition: background-color ease 0.5s;
+  -moz-transition: background-color ease 0.5s;
+  -o-transition: background-color ease 0.5s;
+  transition: background-color ease 0.5s;
+}
+    
+.socialIcons a.facebook {
+  background: #e5e5e5 url(../img/facebook.png) no-repeat left top;
+}
+.socialIcons a.gplus {
+  background: #e5e5e5 url(../img/plus.png) no-repeat left top;
+}
+.socialIcons a.instagram {
+  background: #e5e5e5 url(../img/instagram.png) no-repeat left top;
+}
+
+.socialIcons a.pinterest {
+  background: #e5e5e5 url(../img/pinterest.png) no-repeat left top;
+}
+.socialIcons a.twitter {
+  background: #e5e5e5 url(../img/twitter.png) no-repeat left top;
+}
+.socialIcons a.youtube {
+  background: #e5e5e5 url(../img/youtube.png) no-repeat left top;
+}
+
+
+
+
+/* Header */
+.wrap-icon-shop {
+  padding-left: 20px;
+}
+.branding-data {
+  float: right;
+  padding-top: 100px;
+}
+
+.block-icon-shop {
+  width: 128px;
+  float: left;
+}
+
+.logo-img {
+  margin: 0;
+}
+
+.block-main-menu h2 {
+  display: none;
+}
+
+.block-main-menu ul li {
+  position: relative;
+  float: left;
+  list-style: none;
+  padding: 10px 13px 0;
+  text-align: center;
+}
+
+.block-main-menu li a {
+  display: block;
+  text-decoration: none;
+}
+
+/* MENU */
+
+#zone-menu {
+  background: url(../img/border-menu-bg.png) repeat-x left bottom;
+  padding-bottom: 15px;
+}
