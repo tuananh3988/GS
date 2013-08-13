@@ -77,9 +77,22 @@ body {
   text-decoration: none;
 }
 
+h1.title {
+  display: none;
+}
 /* MENU */
 
 #zone-menu {
   background: url(../img/border-menu-bg.png) repeat-x left bottom;
   padding-bottom: 15px;
+  margin-bottom: 15px;
 }
+
+#zone-menu .block-main-menu ul li a {
+  color: #58585a;
+}
+
+.block-main-menu ul.menu ul li a:hover, .block-main-menu ul.menu ul li a.active:hover, .block-main-menu ul.menu li a:hover, .block-main-menu ul.menu li a.active:hover, .block-main-menu ul.menu li a.active-trail:hover {
+  color: #58585a!important;
+}
+
