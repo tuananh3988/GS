@@ -97,9 +97,21 @@ h1.title {
 }
 
 /* */
+.wrap-hightlight .row-hightlight {
+  padding: 19px 15px;
+  border-top: 2px solid #626467;
+}
+.wrap-hightlight .row-hightlight.last-row {
+  border-bottom: 2px solid #626467;
+}
 .wrap-hightlight .left-hightlight {
   width: 50%;
   float: left;
   text-align: center;
 }
+.wrap-hightlight .row-hightlight a {
+  text-decoration: none;
+  color: #76bd1d;
+}
+
 
