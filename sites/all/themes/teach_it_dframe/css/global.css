@@ -96,3 +96,10 @@ h1.title {
   color: #58585a!important;
 }
 
+/* */
+.wrap-hightlight .left-hightlight {
+  width: 50%;
+  float: left;
+  text-align: center;
+}
+
