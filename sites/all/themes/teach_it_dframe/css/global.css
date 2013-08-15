@@ -109,9 +109,17 @@ h1.title {
   float: left;
   text-align: center;
 }
-.wrap-hightlight .row-hightlight a {
+#section-content .wrap-hightlight .row-hightlight a {
   text-decoration: none;
   color: #76bd1d;
 }
 
 
+/* Slide photos shop */
+
+.block-slide-photos-shop-block h2{
+  text-align: center;
+  background: url(../img/bg-photos.jpg) no-repeat top center;
+  text-indent: 9999px;
+  line-height: 48px;
+}
