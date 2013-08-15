@@ -120,6 +120,31 @@ h1.title {
 .block-slide-photos-shop-block h2{
   text-align: center;
   background: url(../img/bg-photos.jpg) no-repeat top center;
-  text-indent: 9999px;
+  text-indent: -9999px;
   line-height: 48px;
+}
+.swap-shop-online {
+  position: relative;
+}
+
+.text-shop-online {
+  position: absolute;
+  top: -10px;
+  width: 30%;
+  left: 40px;
+  opacity: 0.7;
+  
+  text-align: center;
+  background-color: #bcbcbc;
+  height: 100%;
+}
+
+.text-shop-online .wrap-text-shop-online {
+  padding: 50px 0;
+}
+
+.block-shop-online h2.block-title {
+  color: #58585a;
+  font-size: 40px;
+  text-align: center;
 }
