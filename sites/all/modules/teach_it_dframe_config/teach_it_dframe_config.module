@@ -6,10 +6,10 @@
  * This hook declares what blocks are provided by the module.
  */
 function teach_it_dframe_config_block_info() {
-  $blocks['contact_information'] = array(
-    'info' => t('Header contact information'),
+  $blocks['social_information_footer'] = array(
+    'info' => t('Header social information Footer'),
     'status' => TRUE,
-    'region' => 'user_first',  // Not usually provided.
+    //'region' => 'user_first',  // Not usually provided.
     //'visibility' => BLOCK_VISIBILITY_LISTED,  // Not usually provided.
     //'pages' => 'node/*', // Not usually provided here.
   );
@@ -31,10 +31,9 @@ function teach_it_dframe_config_block_info() {
  * This hook generates the contents of the blocks themselves.
  */
 function teach_it_dframe_config_block_view($delta = '') {
-  
   //The $delta parameter tells us which block is being requested.
   switch ($delta) {
-    case 'contact_information':
+    case 'social_information_footer':
       //$block['subject'] = t('Title of second block (example_empty)');
       $block['content'] = block_teach_it_dframe_contents($delta);
       break;
@@ -51,10 +50,10 @@ function teach_it_dframe_config_block_view($delta = '') {
  */
 function block_teach_it_dframe_contents($which_block) {
   switch ($which_block) {
-    case 'contact_information':
-      return array('#markup' => '<p class="contact-information"><span>E: ' . theme_get_setting('email', 'teach_it_dframe') . '</span>&emsp;<span>T: ' . theme_get_setting('mobile_phone', 'teach_it_dframe') . '</span></p>');
+    case 'social_information_footer':
+      return array('#markup' => '<div class="social-information-footer">' . social_information_html() . '</div>');
     case 'social_information':
-      return array('#markup' => social_information_html());
+      return array('#markup' => '<div class="social-information">' . social_information_html() . '</div>');
   }
 }
 
@@ -74,18 +73,18 @@ function social_information_html() {
   }
   $instagram_url = theme_get_setting('instagram_url', 'teach_it_dframe');
   if($instagram_url !== '') {
-    $tag .= '<a href="' . $linkedin_url . '" class="instagram" title="' . t('instagram') . '">' . t('Instagram') . '</a>';
+    $tag .= '<a href="' . $instagram_url . '" class="instagram" title="' . t('instagram') . '">' . t('Instagram') . '</a>';
   }
   $pinterest_url = theme_get_setting('pinterest_url', 'teach_it_dframe');
    if($pinterest_url !== '') {
-    $tag .= '<a href="' . $flickr_url . '" class="pinterest" title="' . t('pinterest') . '">' . t('Pinterest') . '</a>';
+    $tag .= '<a href="' . $pinterest_url . '" class="pinterest" title="' . t('pinterest') . '">' . t('Pinterest') . '</a>';
   }
   $youtube_url = theme_get_setting('youtube_url', 'teach_it_dframe');
    if($youtube_url !== '') {
     $tag .= '<a href="' . $youtube_url . '" class="youtube" title="' . t('youtube') . '">' . t('Youtube') . '</a>';
   }
   
-  $html = '<p class="pull-right socialIcons">' . $tag . '</p>';
+  $html = '<p class="pull-right socialIcons clearfix">' . $tag . '</p>';
   
   return $html;
 }

@@ -4,7 +4,6 @@ body {
 .socialIcons {
   line-height: 16px;
   
-  margin-bottom: 0;
 }
 .socialIcons a {
   float: right;
@@ -19,24 +18,62 @@ body {
   transition: background-color ease 0.5s;
 }
     
-.socialIcons a.facebook {
-  background: #e5e5e5 url(../img/facebook.png) no-repeat left top;
+.social-information .socialIcons a.facebook {
+  background: #e5e5e5 url(../img/social/facebook.png) no-repeat left top;
 }
-.socialIcons a.gplus {
-  background: #e5e5e5 url(../img/plus.png) no-repeat left top;
+.social-information .socialIcons a.gplus {
+  background: #e5e5e5 url(../img/social/plus.png) no-repeat left top;
 }
-.socialIcons a.instagram {
-  background: #e5e5e5 url(../img/instagram.png) no-repeat left top;
+.social-information .socialIcons a.instagram {
+  background: #e5e5e5 url(../img/social/instagram.png) no-repeat left top;
 }
 
-.socialIcons a.pinterest {
-  background: #e5e5e5 url(../img/pinterest.png) no-repeat left top;
+.social-information .socialIcons a.pinterest {
+  background: #e5e5e5 url(../img/social/pinterest.png) no-repeat left top;
 }
-.socialIcons a.twitter {
-  background: #e5e5e5 url(../img/twitter.png) no-repeat left top;
+.social-information .socialIcons a.twitter {
+  background: #e5e5e5 url(../img/social/twitter.png) no-repeat left top;
 }
-.socialIcons a.youtube {
-  background: #e5e5e5 url(../img/youtube.png) no-repeat left top;
+.social-information .socialIcons a.youtube {
+  background: #e5e5e5 url(../img/social/youtube.png) no-repeat left top;
+}
+
+.social-information-footer {
+  background: url(../img/border-social-bg.png) repeat-x center;
+}
+.social-information-footer .socialIcons {
+  margin: 0 auto;
+  width: 200px;
+  background: #fff;
+  text-align: center;
+}
+.social-information-footer .socialIcons a {
+  width: 30px;
+  height: 30px;
+  float: none;
+}
+
+
+
+
+.social-information-footer .socialIcons a.facebook {
+  background: #e5e5e5 url(../img/social/facebook-f.png) no-repeat left top;
+}
+.social-information-footer .socialIcons a.gplus {
+  background: #e5e5e5 url(../img/social/plus-f.png) no-repeat left top;
+}
+.social-information-footer .socialIcons a.instagram {
+  background: #e5e5e5 url(../img/social/instagram-f.png) no-repeat left top;
+}
+
+.social-information-footer .socialIcons a.pinterest {
+  background: #e5e5e5 url(../img/social/pinterest-f.png) no-repeat left top;
+}
+.social-information-footer .socialIcons a.twitter {
+  background: #e5e5e5 url(../img/social/twitter-f.png) no-repeat left top;
+}
+.social-information-footer .socialIcons a.youtube {
+  background: #e5e5e5 url(../img/social/youtube-f.png) no-repeat left top;
 }
 
 
@@ -114,10 +151,9 @@ h1.title {
   color: #76bd1d;
 }
 
-
 /* Slide photos shop */
 
-.block-slide-photos-shop-block h2{
+.block-slide-photos-shop-block h2,  .pane-views-slide-photos-shop-block h2{
   text-align: center;
   background: url(../img/bg-photos.jpg) no-repeat top center;
   text-indent: -9999px;
@@ -143,8 +179,16 @@ h1.title {
   padding: 50px 0;
 }
 
-.block-shop-online h2.block-title {
+.block-shop-online h2.block-title, .block-shop-online h2.pane-title {
   color: #58585a;
   font-size: 40px;
   text-align: center;
+}
+
+.border-title {
+  border-bottom: 1px solid #CDCDCD;
+}
+
+.page-node-13 .field-name-body table {
+  border: none;
 }
