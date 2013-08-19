@@ -1,6 +1,10 @@
 body {
   font-family: Quicksand, Quattrocento Sans, Georgia;
 }
+
+a {
+  text-decoration: none;
+}
 .socialIcons {
   line-height: 16px;
   
@@ -191,4 +195,41 @@ h1.title {
 
 .page-node-13 .field-name-body table {
   border: none;
+}
+
+.community-row {
+  width: 50%;
+  float: left;
+  text-align: center;
+}
+
+.community-row .views-field-title {
+
+  padding: 10px;
+  margin-bottom: 15px;
+
+}
+
+.community-row .views-field-title .field-content {
+    border-bottom: 1px solid #CDCDCD;
+    padding-bottom: 10px;
+    display: block;
+}
+
+.community-row .views-field-body {
+  padding: 10px 10px 0;
+}
+
+.community-row .views-field-view-node {
+  text-align: right;
+  padding-right: 10px;
+}
+
+#section-content .community-row .views-field-view-node a {
+  color:#76bd1d;
+  font-size: 16px;
+}
+
+#section-footer {
+  margin-top: 15px;
 }
