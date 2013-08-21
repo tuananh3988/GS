@@ -203,14 +203,12 @@ h1.title {
   text-align: center;
 }
 
-.community-row .views-field-title {
-
+.community-row .views-field-title, .news-row .views-field-title {
   padding: 10px;
   margin-bottom: 15px;
-
 }
 
-.community-row .views-field-title .field-content {
+.community-row .views-field-title .field-content, .news-row .views-field-title .field-content {
     border-bottom: 1px solid #CDCDCD;
     padding-bottom: 10px;
     display: block;
@@ -225,11 +223,58 @@ h1.title {
   padding-right: 10px;
 }
 
-#section-content .community-row .views-field-view-node a {
+#section-content .community-row .views-field-view-node a, .news-row .views-field-body .field-content a {
   color:#76bd1d;
   font-size: 16px;
 }
 
 #section-footer {
   margin-top: 15px;
+}
+.rows-spotlight img, .news-row img{
+  width: 100%;
+  height: auto;
+}
+
+.news-row.views-row-first {
+  width: 100%;
+  float: none;
+}
+
+.news-row.views-row-first .views-field-field-image {
+  width: 100%;
+  float: none;
+}
+
+.news-row {
+  width: 50%;
+  float: left;
+}
+
+.news-row .views-field-field-image {
+  width: 60%;
+  float: left;
+}
+
+.news-row .views-field-field-image .field-content {
+  padding: 10px;
+}
+
+.news-row.views-row-first .views-field-body {
+  width: 100%;
+  float: none;
+}
+
+.news-row .views-field-body {
+  width: 40%;
+  float: left;
+}
+
+.news-row .views-field-body .field-content {
+  padding: 10px;
+  text-align: right;
+}
+
+.news-row .views-field-body .field-content p {
+  text-align: left;
 }
