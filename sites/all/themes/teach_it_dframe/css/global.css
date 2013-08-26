@@ -2,6 +2,9 @@ body {
   font-family: Quicksand, Quattrocento Sans, Georgia;
 }
 
+table {
+  border: none;
+}
 a {
   text-decoration: none;
 }
