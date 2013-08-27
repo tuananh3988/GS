@@ -8,6 +8,10 @@ table {
 a {
   text-decoration: none;
 }
+
+#breadcrumb {
+  display: none;
+}
 .socialIcons {
   line-height: 16px;
   
@@ -123,6 +127,13 @@ a {
 
 h1.title {
   display: none;
+}
+
+.page-news h1.title {
+  display: block;
+  text-align: center;
+  font-size: 28px;
+  color: #58585a;
 }
 /* MENU */
 
