@@ -292,3 +292,47 @@ h1.title {
 .news-row .views-field-body .field-content p {
   text-align: left;
 }
+
+/* Footer */
+#section-footer {
+  color: #59595c;
+}
+
+#section-footer h2 {
+  line-height: 35px;
+  font-size: 20px;
+}
+
+#section-footer a {
+  color: #59595c;
+  font-size: 16px;
+  line-height: 22px;
+
+}
+
+#section-footer label {
+  font-weight: normal;
+}
+
+#section-footer .input-box {
+  width: 60%;
+  float: left;
+}
+
+#section-footer .actions {
+  display: block;
+  width: 40%;
+  border: none;
+  background-color: #76bd1d;
+  color: #fff;
+  float: left;
+  text-align: center;
+}
+
+#section-footer .actions .button {
+  border: none;
+  background: none;
+  text-align: center;
+  color: #fff;
+  text-shadow: none;
+}
