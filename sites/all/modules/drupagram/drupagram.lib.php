@@ -139,7 +139,7 @@ class Instagram {
     'post_like' => 'v1/media/%d/likes',
     'remove_like' => 'v1/media/%d/likes?access_token=!access_token',
     'tags' => 'v1/tags/%s?access_token=!access_token',
-    'tags_recent' => 'v1/tags/%s/media/recent?max_id=%d&min_id=%d&access_token=!access_token',
+    'tags_recent' => 'v1/tags/!s/media/recent?max_id=%d&min_id=%d&access_token=!access_token',
     'tags_search' => 'v1/tags/search?q=%s&access_token=!access_token',
     'locations' => 'v1/locations/%d?access_token=!access_token',
     'locations_recent' => 'v1/locations/%d/media/recent/?max_id=%d&min_id=%d&max_timestamp=%d&min_timestamp=%d&access_token=!access_token',
@@ -296,6 +296,12 @@ class Instagram {
 
     return $this->fetch('user_recent', $params, $use_auth);
   }
+  
+    public function tag_recent($tag_name = NULL, $params = array(), $use_auth = TRUE) {
+      $params['!s'] = $tag_name;
+
+      return $this->fetch('tags_recent', $params, $use_auth);
+  }
 
   /**
    * See the authenticated user's list of media they've liked. Note that this
@@ -377,7 +383,7 @@ class Instagram {
   protected function request($url, $params = array(), $method = 'GET', $use_auth = FALSE) {
     // @TODO: GET requests could potentially be cached.
     $data = '';
-
+    
     if (!is_array($params)) {
       $params = (array) $params;
     }

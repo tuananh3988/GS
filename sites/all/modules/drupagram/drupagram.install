@@ -124,6 +124,25 @@ function drupagram_schema() {
     ),
     'indexes' => array('path' => array('path')),
   );
+  
+  $schema['drupagram_tags'] = array(
+    'description' => "Stores tags",
+    'fields' => array(
+      'id' => array(
+        'description' => "id tag.",
+        'type' => 'serial',
+       
+      ),
+      'tag_name' => array(
+        'description' => "tag name",
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+      ),
+    ),
+    'indexes' => array('tag_name' => array('tag_name')),
+    'primary key' => array('id'),
+  );
 
   /**
    * Instagram user objects have the following attributes:

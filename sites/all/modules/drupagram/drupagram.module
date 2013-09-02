@@ -161,12 +161,23 @@ function drupagram_cron() {
   // Pull up a list of Instagram accounts that are flagged for updating,
   // sorted by how long it's been since we last updated them. This ensures
   // that the most out-of-date accounts get updated first.
+  $drupagram_id = 0;
   module_load_include('inc', 'drupagram');
   $result = db_query_range("SELECT drupagram_id FROM {drupagram_account} WHERE import = :import ORDER BY last_refresh ASC", 0, 20, array(':import' => 1));
   foreach ($result as $account) {
     // drupagram_fetch_user_feed($account->drupagram_id);
     drupagram_fetch_recent_items($account->drupagram_id);
+    $drupagram_id = $account->drupagram_id;
   }
+  
+  if($drupagram_id !== 0) {
+    $resultTags = db_query("SELECT tag_name FROM {drupagram_tags}");
+    foreach ($resultTags as $tag) {
+      // drupagram_fetch_user_feed($account->drupagram_id);
+      drupagram_fetch_tag_items($tag->tag_name, $drupagram_id);
+    }
+  }
+  
 
   // Nuke old items.
   if ($age = variable_get('drupagram_expire', 0)) {
