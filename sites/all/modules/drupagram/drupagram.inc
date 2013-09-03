@@ -207,7 +207,7 @@ function drupagram_fetch_tag_items($tag_name, $drupagram_id) {
   if (empty($items)) {
     return;
   }
-debug($items);
+  
   foreach ($items as $media) {
     drupagram_media_save($media);
   }

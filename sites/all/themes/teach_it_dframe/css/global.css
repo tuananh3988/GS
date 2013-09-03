@@ -336,3 +336,9 @@ h1.title {
   color: #fff;
   text-shadow: none;
 }
+
+.node-type-location-shop .instagrams-store .block-title {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
