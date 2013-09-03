@@ -14,7 +14,7 @@ Database name  827322_greene
 
 
 new database
-
+ IP Address72.32.1.170
 [10:23:46 AM] John Spencer: Database name  827322_gogreene
 [10:23:58 AM] John Spencer: Hostname mysql51-030.wc1.dfw1.stabletransit.com
 [10:24:08 AM] John Spencer: 827322_corp
