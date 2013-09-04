@@ -18,8 +18,8 @@ a {
 }
 .socialIcons a {
   float: right;
-  width: 16px;
-  height: 16px;
+  width: 20px;
+  height: 20px;
   text-indent: -1000em;
   display: inline-block;
   margin-left: 3px;
@@ -30,23 +30,23 @@ a {
 }
     
 .social-information .socialIcons a.facebook {
-  background: #e5e5e5 url(../img/social/facebook.png) no-repeat left top;
+  background:  url(../img/social/facebook.png) no-repeat left top;
 }
 .social-information .socialIcons a.gplus {
-  background: #e5e5e5 url(../img/social/plus.png) no-repeat left top;
+  background:  url(../img/social/plus.png) no-repeat left top;
 }
 .social-information .socialIcons a.instagram {
-  background: #e5e5e5 url(../img/social/instagram.png) no-repeat left top;
+  background:  url(../img/social/instagram.png) no-repeat left top;
 }
 
 .social-information .socialIcons a.pinterest {
-  background: #e5e5e5 url(../img/social/pinterest.png) no-repeat left top;
+  background:  url(../img/social/pinterest.png) no-repeat left top;
 }
 .social-information .socialIcons a.twitter {
-  background: #e5e5e5 url(../img/social/twitter.png) no-repeat left top;
+  background:  url(../img/social/twitter.png) no-repeat left top;
 }
 .social-information .socialIcons a.youtube {
-  background: #e5e5e5 url(../img/social/youtube.png) no-repeat left top;
+  background:  url(../img/social/youtube.png) no-repeat left top;
 }
 
 .social-information-footer {
@@ -68,23 +68,23 @@ a {
 
 
 .social-information-footer .socialIcons a.facebook {
-  background: #e5e5e5 url(../img/social/facebook-f.png) no-repeat left top;
+  background:  url(../img/social/facebook-f.png) no-repeat left top;
 }
 .social-information-footer .socialIcons a.gplus {
-  background: #e5e5e5 url(../img/social/plus-f.png) no-repeat left top;
+  background:  url(../img/social/plus-f.png) no-repeat left top;
 }
 .social-information-footer .socialIcons a.instagram {
-  background: #e5e5e5 url(../img/social/instagram-f.png) no-repeat left top;
+  background:  url(../img/social/instagram-f.png) no-repeat left top;
 }
 
 .social-information-footer .socialIcons a.pinterest {
-  background: #e5e5e5 url(../img/social/pinterest-f.png) no-repeat left top;
+  background:  url(../img/social/pinterest-f.png) no-repeat left top;
 }
 .social-information-footer .socialIcons a.twitter {
-  background: #e5e5e5 url(../img/social/twitter-f.png) no-repeat left top;
+  background:  url(../img/social/twitter-f.png) no-repeat left top;
 }
 .social-information-footer .socialIcons a.youtube {
-  background: #e5e5e5 url(../img/social/youtube-f.png) no-repeat left top;
+  background:  url(../img/social/youtube-f.png) no-repeat left top;
 }
 
 
@@ -341,4 +341,4 @@ h1.title {
   text-align: center;
   font-size: 20px;
   margin-bottom: 15px;
-}
+}.socialIcons a
