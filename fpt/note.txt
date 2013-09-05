@@ -2,9 +2,6 @@ http://www.greenestreet.com.php53-5.dfw1-1.websitetestlink.com/
 tuananh@teachitinc.com
 1
 
-
-
-
 Database name  827322_greene
 [9:56:19 AM] John Spencer: Hostname mysql51-023.wc1.dfw1.stabletransit.com
 [9:56:36 AM] John Spencer: 827322_street
