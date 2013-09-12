@@ -112,7 +112,7 @@ a {
   display: none;
 }
 
-.block-main-menu ul li {
+.block-main-menu ul.menu li {
   position: relative;
   float: left;
   list-style: none;
@@ -120,7 +120,7 @@ a {
   text-align: center;
 }
 
-.block-main-menu li a {
+.block-main-menu ul.menu li a {
   display: block;
   text-decoration: none;
 }
@@ -357,4 +357,74 @@ h1.title {
   width: 25%;
   float: right;
   text-align: right;
+}
+
+.block-main-menu ul.mnav {
+  display: block;
+  width: 200px;
+}
+
+.block-main-menu ul.mnav li {
+  display: block;
+  color: #58585a;
+}
+
+.wrap-mobile-menu {
+  width: 250px;
+  clear: both;
+}
+
+.wrap-top-mobile-menu {
+  -webkit-box-shadow: 0px 1px 3px rgba(34, 34, 34,0.3);
+  box-shadow: 0px 1px 3px rgba(34, 34, 34,0.3);
+}
+
+.wrap-top-mobile-menu-left {
+height: 36px;
+overflow: hidden;
+width: 213px;
+display: inline-block;
+float: left;
+line-height: 36px;
+color: #979797;
+text-indent: 10px;
+background-color: #fff;
+background-color: rgba(255, 255, 255, 1);
+}
+
+.wrap-top-mobile-menu-arrow {
+height: 36px;
+float: left;
+width: 36px;
+background-color: rgba(151, 151, 151, 0.15);
+}
+
+.tr_wrapper {
+overflow: hidden;
+width: 36px;
+height: 36px;
+z-index: -1;
+background: url(../img/bg.png) no-repeat 3px top;
+cursor: pointer;
+}
+
+ul.mnav.sf-menu>li {
+  display: block;
+  float: left;
+	width:100%;
+	text-align:right;
+  border-bottom: 1px solid #979797;
+  text-align: left;
+}
+ul.mnav.sf-menu>li>a {
+  float: none;
+  padding: 4px 0px 3px 0px;
+  line-height: 1.2em;
+  text-decoration: none;
+	font-size: 20px;
+	z-index:10;
+	margin:0px 0px;
+	text-transform:uppercase;
+	font-weight:600;
+	outline:none;
 }
