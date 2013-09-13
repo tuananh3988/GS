@@ -59,8 +59,8 @@ a {
   text-align: center;
 }
 .social-information-footer .socialIcons a {
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
   float: none;
 }
 
@@ -68,23 +68,23 @@ a {
 
 
 .social-information-footer .socialIcons a.facebook {
-  background:  url(../img/social/facebook-f.png) no-repeat left top;
+  background:  url(../img/social/facebook.png) no-repeat left top;
 }
 .social-information-footer .socialIcons a.gplus {
-  background:  url(../img/social/plus-f.png) no-repeat left top;
+  background:  url(../img/social/plus.png) no-repeat left top;
 }
 .social-information-footer .socialIcons a.instagram {
-  background:  url(../img/social/instagram-f.png) no-repeat left top;
+  background:  url(../img/social/instagram.png) no-repeat left top;
 }
 
 .social-information-footer .socialIcons a.pinterest {
-  background:  url(../img/social/pinterest-f.png) no-repeat left top;
+  background:  url(../img/social/pinterest.png) no-repeat left top;
 }
 .social-information-footer .socialIcons a.twitter {
-  background:  url(../img/social/twitter-f.png) no-repeat left top;
+  background:  url(../img/social/twitter.png) no-repeat left top;
 }
 .social-information-footer .socialIcons a.youtube {
-  background:  url(../img/social/youtube-f.png) no-repeat left top;
+  background:  url(../img/social/youtube.png) no-repeat left top;
 }
 
 
@@ -372,6 +372,7 @@ h1.title {
 .wrap-mobile-menu {
   width: 250px;
   clear: both;
+  display: none;
 }
 
 .wrap-top-mobile-menu {
@@ -380,32 +381,32 @@ h1.title {
 }
 
 .wrap-top-mobile-menu-left {
-height: 36px;
-overflow: hidden;
-width: 213px;
-display: inline-block;
-float: left;
-line-height: 36px;
-color: #979797;
-text-indent: 10px;
-background-color: #fff;
-background-color: rgba(255, 255, 255, 1);
+  height: 36px;
+  overflow: hidden;
+  width: 213px;
+  display: inline-block;
+  float: left;
+  line-height: 36px;
+  color: #979797;
+  text-indent: 10px;
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, 1);
 }
 
 .wrap-top-mobile-menu-arrow {
-height: 36px;
-float: left;
-width: 36px;
-background-color: rgba(151, 151, 151, 0.15);
+  height: 36px;
+  float: left;
+  width: 36px;
+  background-color: rgba(151, 151, 151, 0.15);
 }
 
 .tr_wrapper {
-overflow: hidden;
-width: 36px;
-height: 36px;
-z-index: -1;
-background: url(../img/bg.png) no-repeat 3px top;
-cursor: pointer;
+  overflow: hidden;
+  width: 36px;
+  height: 36px;
+  z-index: -1;
+  background: url(../img/bg.png) no-repeat 3px top;
+  cursor: pointer;
 }
 
 ul.mnav.sf-menu>li {
@@ -421,10 +422,10 @@ ul.mnav.sf-menu>li>a {
   padding: 4px 0px 3px 0px;
   line-height: 1.2em;
   text-decoration: none;
-	font-size: 20px;
-	z-index:10;
-	margin:0px 0px;
-	text-transform:uppercase;
-	font-weight:600;
-	outline:none;
+  font-size: 20px;
+  z-index:10;
+  margin:0px 0px;
+  text-transform:uppercase;
+  font-weight:600;
+  outline:none;
 }
