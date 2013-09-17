@@ -369,6 +369,12 @@ h1.title {
   color: #58585a;
 }
 
+tr:hover td,
+tr.even:hover td.active,
+tr.odd:hover td.active {
+	background: none;
+}
+
 .wrap-mobile-menu {
   width: 250px;
   clear: both;
