@@ -70,7 +70,7 @@ html[xmlns] .slides {display: block;}
 .flex-control-thumbs img:hover {opacity: 1;}
 .flex-control-thumbs .flex-active {opacity: 1; cursor: default;}
 
-.flexslider li .views-field-body {position:absolute; background: #FFF; opacity: .7; width: 40%; height: 100%; top:0; padding: 10px; right: 0px}
+.flexslider li .views-field-body {position:absolute; width: 40%; height: 100%; top:0; padding: 10px; right: 0px}
 .flexslider li .views-field-body  p { color: #198835;}
 @media screen and (max-width: 860px) {
   .flex-direction-nav .flex-prev {opacity: 1; left: 0;}

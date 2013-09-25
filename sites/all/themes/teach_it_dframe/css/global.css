@@ -102,6 +102,7 @@ a {
 .block-icon-shop {
   width: 128px;
   float: left;
+  margin-bottom: 20px;
 }
 
 .logo-img {
@@ -185,11 +186,8 @@ h1.title {
   position: absolute;
   top: 0;
   width: 30%;
-  left: 40px;
-  opacity: 0.7;
-  
+  right: 40px;
   text-align: center;
-  background-color: #bcbcbc;
   height: 100%;
 }
 
@@ -434,4 +432,45 @@ ul.mnav.sf-menu>li>a {
   text-transform:uppercase;
   font-weight:600;
   outline:none;
+}
+
+
+.logo-shop a {
+  display: block;
+  width: 126px;
+  height: 57px;
+  background: url(../img/shop-logo.png) no-repeat left top;
+  text-indent: -9999px;
+}
+
+.logo-recycle {
+  height: 38px;
+}
+
+.logo-recycle a {
+  display: block;
+  width: 150px;
+  height: 38px;
+  background: url(../img/recycle.png) no-repeat left top;
+  text-indent: -9999px;
+}
+
+.logo-consign a {
+  display: block;
+  width: 150px;
+  height: 42px;
+  background: url(../img/consign.png) no-repeat left top;
+  text-indent: -9999px;
+}
+
+.logo-shop a.not-active {
+  background: url(../img/shop-logo.png) no-repeat left -57px;
+}
+
+.logo-recycle a.not-active {
+  background: url(../img/recycle.png) no-repeat left -38px;
+}
+
+.logo-consign a.not-active {
+  background: url(../img/consign.png) no-repeat left -42px;
 }
