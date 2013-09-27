@@ -474,3 +474,22 @@ ul.mnav.sf-menu>li>a {
 .logo-consign a.not-active {
   background: url(../img/consign.png) no-repeat left -42px;
 }
+
+.mailchimp-lists-user-subscribe-form #edit-submit {
+    display: block;
+    width: 80px;
+    border: none;
+    background: #76bd1d;
+    color: #fff;
+    text-shadow: none;
+    border-radius: 0;
+}
+
+.mailchimp-lists-user-subscribe-form .form-item {
+    margin-bottom: 10px;
+}
+
+.mailchimp-lists-user-subscribe-form .form-item label {
+    display: none;
+}
+

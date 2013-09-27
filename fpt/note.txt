@@ -2,6 +2,13 @@ http://www.greenestreet.com.php53-5.dfw1-1.websitetestlink.com/
 tuananh@teachitinc.com
 1
 
+FTP
+FTP Server 2    ftp2.ftptoyoursite.com
+Use this address if the one above does not work.
+Username        greenestreet
+Password        $Greene13
+FTP Path         /shop.greenestreet.com/web/content/
+
 Database name  827322_greene
 [9:56:19 AM] John Spencer: Hostname mysql51-023.wc1.dfw1.stabletransit.com
 [9:56:36 AM] John Spencer: 827322_street
@@ -11,9 +18,14 @@ Database name  827322_greene
 
 
 new database
- IP Address72.32.1.170
-[10:23:46 AM] John Spencer: Database name  827322_gogreene
-[10:23:58 AM] John Spencer: Hostname mysql51-030.wc1.dfw1.stabletransit.com
-[10:24:08 AM] John Spencer: 827322_corp
-[9:57:06 AM] John Spencer: $Greene13
-[10:24:13 AM] John Spencer: password the same
+ IP Address:	 72.32.1.170
+ Database name:  827322_gogreene
+ Hostname:		 mysql51-030.wc1.dfw1.stabletransit.com
+ User:			 827322_corp
+ Pass:			 $Greene13
+
+
+
+mailchimp
+greenestreet@teachitinc.com
+$Greene13
