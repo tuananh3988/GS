@@ -52,6 +52,15 @@ function drupagram_menu() {
     'access arguments' => array('make drupagram accounts global'),
     'file' => 'drupagram.pages.inc',
   );
+  
+  $items['drupagram/detail/%drupagram'] = array(
+    'title' => 'Instagram detail',
+    'page callback' => 'drupagram_instagrams_detail',
+    'page arguments' => array(2),
+    'file' => 'drupagram.pages.inc',
+    'access arguments' => array('access content'),
+    'type' => MENU_CALLBACK,
+  );
 
   return $items;
 }
@@ -379,4 +388,9 @@ function _drupagram_load_data($path) {
   }
 
   return FALSE;
+}
+
+function drupagram_load($id) {
+    $drupagram = db_query("SELECT * FROM {drupagram} WHERE drupagram_id = :drupagram_id", array(':drupagram_id' => $id))->fetchAll();
+    return $drupagram;
 }

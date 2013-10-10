@@ -107,6 +107,7 @@ a {
 
 .logo-img {
   margin: 0;
+  margin-bottom: 5px;
 }
 
 .block-main-menu h2 {
@@ -438,19 +439,19 @@ ul.mnav.sf-menu>li>a {
 .logo-shop a {
   display: block;
   width: 126px;
-  height: 56px;
+  height: 42px;
   background: url(../img/shop-logo.png) no-repeat left top;
   text-indent: -9999px;
 }
 
 .logo-recycle {
-  height: 33px;
+  height: 25px;
 }
 
 .logo-recycle a {
   display: block;
   width: 150px;
-  height: 33px;
+  height: 25px;
   background: url(../img/recycle.png) no-repeat left top;
   text-indent: -9999px;
 }
@@ -458,22 +459,22 @@ ul.mnav.sf-menu>li>a {
 .logo-consign a {
   display: block;
   width: 150px;
-  height: 36px;
+  height: 27px;
   background: url(../img/consign.png) no-repeat left top;
   text-indent: -9999px;
   margin-top: -2px;
 }
 
 .logo-shop a.not-active {
-  background: url(../img/shop-logo.png) no-repeat left -56px;
+  opacity: 0.65;
 }
 
 .logo-recycle a.not-active {
-  background: url(../img/recycle.png) no-repeat left -33px;
+  opacity: 0.65;
 }
 
 .logo-consign a.not-active {
-  background: url(../img/consign.png) no-repeat left -36px;
+  opacity: 0.65;
 }
 
 .mailchimp-lists-user-subscribe-form #edit-submit {

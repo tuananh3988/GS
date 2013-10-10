@@ -421,3 +421,8 @@ function drupagram_oauth_callback_form_submit(&$form, &$form_state) {
   // - so adding drupal_goto() here (but not liking it).
   drupal_goto('user/' . $account->uid . '/edit/drupagram');
 }
+
+
+function drupagram_instagrams_detail($drupagram) {
+    var_dump($drupagram);
+}
