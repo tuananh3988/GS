@@ -394,3 +394,8 @@ function drupagram_load($id) {
     $drupagram = db_query("SELECT * FROM {drupagram} WHERE drupagram_id = :drupagram_id", array(':drupagram_id' => $id))->fetchAll();
     return $drupagram;
 }
+
+function drupagram_get_all_tag() {
+    $drupagram = db_query("SELECT * FROM {drupagram_tags}")->fetchAll();
+    return $drupagram;
+}

@@ -424,5 +424,25 @@ function drupagram_oauth_callback_form_submit(&$form, &$form_state) {
 
 
 function drupagram_instagrams_detail($drupagram) {
-    var_dump($drupagram);
+    $ago = format_interval((time() - $drupagram[0]->created_time) , 2) . t(' ago');
+    $images = unserialize($drupagram[0]->images);
+    $caption = unserialize($drupagram[0]->caption);
+    $tags = drupagram_get_all_tag();
+    foreach ($tags as $k => $v) {
+      $caption['text'] = str_replace('#' . $v->tag_name . ' ', '<a href="/map/' . $v->alias . '/' . $v->tag_name . '">#' . $v->tag_name . '</a> ', $caption['text']);
+    }
+    
+    $content = '';
+    $content .= '<div style="width: 350px;">';
+    $content .=   '<img style="width: 306px;" src="'. $images['low_resolution']['url'] . '" >';
+    $content .=   '<div style="position: relative;" class="instagram-detail-left">';
+    $content .=     '<p style="color: blue;font-size: 18px;">' . $drupagram[0]->username . '</p>';
+    $content .=     '<p style="color: gray;font-size: 14px;">' . $ago . '</p>';
+    $content .=     '<p>' . $caption['text'] . '</p>';
+    $content .=     '<div style="position: absolute;top: 0; right: 0;" class="instagram-detail-right">';
+    $content .=       '<a href="https://twitter.com/ShopGreeneSt" class="twitter-follow-button" data-show-count="false" data-dnt="true">Follow</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>';
+    $content .=     '</div>';
+    $content .=   '</div>';
+    $content .= '</div>';
+    print $content;
 }

@@ -139,6 +139,13 @@ function drupagram_schema() {
         'length' => 255,
         'not null' => TRUE,
       ),
+        
+      'alias' => array(
+        'description' => "Use it for link to click to tag",
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+      ),
     ),
     'indexes' => array('tag_name' => array('tag_name')),
     'primary key' => array('id'),

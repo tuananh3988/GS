@@ -1,6 +1,14 @@
 (function ($) {
 
     $(document).ready(function () {
+      //open window detail image instagram
+      $('.drupagram-detail').click(function() {
+        var href = $(this).attr('href');
+        var n = href.split("=");
+        var id = n[1];
+        window.open("/drupagram/detail/" + id, null, "width=400,status=yes,toolbar=no,menubar=no,location=no");
+      });
+      
       var url = String(window.location);
       
       if(url.indexOf('/recycle') > 0) {
