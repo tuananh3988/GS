@@ -6,7 +6,7 @@
         var href = $(this).attr('href');
         var n = href.split("=");
         var id = n[1];
-        window.open("/drupagram/detail/" + id, null, "width=400,status=yes,toolbar=no,menubar=no,location=no");
+        window.open("/drupagram/detail/" + id, null, "width=400,height=450,status=yes,toolbar=no,menubar=no,location=no");
       });
       
       var url = String(window.location);
