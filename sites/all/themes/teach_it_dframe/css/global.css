@@ -118,6 +118,20 @@ a {
   text-align: center;
 }
 
+.block-main-menu ul.menu li.first {
+  padding-left: 0;
+  margin-left: 0;
+}
+
+#zone-branding-wrapper {
+  margin-bottom: 15px;
+}
+
+.branding-data {
+  float: right;
+  margin-top: 63px;
+}
+
 .block-main-menu ul.menu li a {
   display: block;
   text-decoration: none;
@@ -346,19 +360,16 @@ h1.title {
 .block-main-menu {
   width: 60%;
   float: left;
-  height: 92px;
+  
 }
 
-.block-main-menu > .block-inner, .menu-link-shop > .block-inner {
-    position: absolute;
-    bottom: 5px;
-}
+
 
 .menu-link-shop {
   width: 25%;
   float: right;
   text-align: right;
-  height: 92px;
+  
 }
 
 .block-main-menu ul.mnav {

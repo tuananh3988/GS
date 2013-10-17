@@ -1,4 +1,9 @@
-.panel-2col-bricks .panel-col-first, .panel-2col-bricks .panel-col-last {
+.panel-2col-bricks .panel-col-first {
   float: left;
-  width: 50%;
+  width: 70%;
+}
+
+.panel-2col-bricks .panel-col-last {
+  float: left;
+  width: 30%;
 }
