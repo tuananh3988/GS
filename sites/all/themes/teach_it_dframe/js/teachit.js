@@ -8,7 +8,11 @@
         var id = n[1];
         window.open("/drupagram/detail/" + id, null, "width=400,height=450,status=yes,toolbar=no,menubar=no,location=no");
       });
-      
+      //fix click to slider category
+			$('.link-category a').click(function() {
+				window.location.href = $(this).attr('href');
+			});
+			
       var url = String(window.location);
       
       if(url.indexOf('/recycle') > 0) {

@@ -65,6 +65,12 @@ function drupagram_menu() {
   return $items;
 }
 
+//popup show in maintanance mode
+function drupagram_menu_site_status_alter(&$menu_site_status, $path) {
+  if ($menu_site_status == MENU_SITE_OFFLINE && strpos($path, 'drupagram/detail/') !== false ) {
+    $menu_site_status = MENU_SITE_ONLINE;
+  }
+}
 /**
  * Access callback for drupagram account editing.
  */
